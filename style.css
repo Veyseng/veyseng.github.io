@@ -1,44 +1,88 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
 }
 
-body {
-    background: linear-gradient(to right, #2B32B2, #1488CC);
-    color: white;
-    text-align: center;
-    padding: 20px;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
 }
 
-header p {
-    font-size: 1.2em;
-    margin: 10px 0;
+#navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-main {
-    margin-top: 20px;
+#navbar ul {
+    list-style: none;
+    display: flex;
 }
 
-section {
-    margin: 20px 0;
+#navbar ul li {
+    margin: 0 10px;
 }
 
-a {
-    color: #AAD8FF;
+#navbar ul li a {
+    color: #fff;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+.header-content {
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header-bg.jpg') center no-repeat;
+    background-size: cover;
 }
 
-footer p {
-    margin-top: 20px;
-    font-size: 0.8em;
+.header-content h2 {
+    font-size: 2.5rem;
 }
+
+.header-content p {
+    margin: 20px 0;
+}
+
+.cta-btn {
+    display: inline-block;
+    color: #fff;
+    background: #e8491d;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #333;
+}
+
+section {
+    padding: 50px 0;
+}
+
+section h3 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.achievements-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievement-item {
+    flex: 1;
+    padding: 20px;
+    background: #
